@@ -1,0 +1,40 @@
+The presentations will be 15 minutes. Immediately in advance of your presentation you DO NOT have time to go the google drive, drop box, or the like and retrieve your material. You should have your slides and support material on a USB stick. All members must participate in the presentation and be present.
+
+The slides must be professional and start with a title page followed by a members page. Then you should explain what the project is, how it was developed, and anything that you feel is important. Gantt chart, UML and/or ER diagrams are required. Talk about what went well and what did not go well. Leave time for questions and have a questions page.
+
+Project Requirements:
+Remote database
+Use any stack, but WISA, Lamp, and MERN are preferred.
+Use JSon to communicate between client and server. During the presentation, you must show access to at least one API endpoint using ARC or CURL.
+You will use a web page as the client. (A web page must be AJAX enabled that accesses the API.)
+
+The program is a personal contact manager. Each user needs a login. For each user, they can add their own contacts (not shared contacts). They can search for and delete contacts.
+
+The user interface should be clean and professional. The project should be as professional as possible. The source and support files must be in github (You will add the link to the sign up sheet).
+
+Deliverables:
+Zipped PowerPoint presentation -- (all members must submit) First, make sure you put your names into the spreadsheet https://docs.google.com/spreadsheets/d/1wP_QnMtx66K-_ab2_ZhEGVUrTqflL9Uf3twkCIebgWY/edit#gid=0 (Links to an external site.)
+
+You will get a zero if you miss your team's presentation without prior approval of the instructor.
+
+This is the rubric for the small presentation (but does not indicate a required order)
+
+1. Submission of PowerPoint slides to the Webcourse - 10 pts
+
+2. Professional PowerPoint slides - 10 pts
+
+3. All members participate in the presentation - 5 pts
+
+4. Use case - 5 pts
+
+5. Gantt chart - 5 pts
+
+6. Thorough demonstration of working project - 25 pts
+
+7. Project adheres to current standards - 15 pts
+
+8. ERD - 5 pts
+
+9. Explanation of technology used for project - 10 pts
+
+10. There are discretionary points for the instructor to award for project excellence - 10 pts
