@@ -1,0 +1,104 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Manager</title>
+	<script type="text/javascript" src="code.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="content">
+	<div id="loginDiv">
+		<div class="container">
+			<div class="imgcontainer">
+    			<img src="logo.png" alt="logo" class="logo">
+  			</div>
+			<label for="loginUsername"><b>Username</b></label>
+			<input type="text" id="loginUsername" placeholder="Enter Username" /><br />
+			<label for="loginPassword"><b>Password</b></label>
+			<input type="password" id="loginPassword" placeholder="Enter Password"/><br />
+			<button type="button" id="loginButton" class="buttons" onclick="doLogin();"> Log in </button>
+			<button type="button" id="registerButton" class= "buttons" onclick="toRegister();"> Sign up here! </button>
+			<br />
+		</div>
+		<span id="loginResult"></span>
+	</div>
+</div>
+
+<div id="othercontent">
+	<div class="container">
+	<div id="editDiv" style="display:none; visibility:hidden;">
+		<span id="inner-title">Edit Your Contact</span><br />
+		<input type="text" id="fname" placeholder="First Name" /><br />
+		<input type="text" id="lname" placeholder="Last Name"/><br />
+		<input type="text" id="pnum" placeholder="Phone"/><br />
+		<input type="text" id="emum" placeholder="Email"/><br />
+		<button type="button" id="editButton" class="buttons" onclick="doEdit();"> Submit </button>
+		<button type="button" id="backButton" class= "buttons" onclick="toMain();"> Go Back </button>
+		<br />
+		<span id="editResult"></span>
+	</div>
+
+<div id="addDiv" style="display: none; visibility:hidden;">
+	<span id="inner-title">Enter new contact information</span><br />
+	<input type="text" id="addFName" placeholder="First Name" /><br />
+	<input type="text" id="addLName" placeholder="Last Name"/><br />
+	<input type="text" id="addPhone" placeholder="Phone"/><br />
+	<input type="text" id="addEmail" placeholder="Email"/><br />
+	<button type="button" id="editButton" class="buttons" onclick="addContact();"> Submit </button>
+	<button type="button" id="backButton" class= "buttons" onclick="toMain();"> Go Back </button>
+</div>
+
+<div id="registerDiv" style="display:none; visibility:hidden;">
+	<span id="inner-title2">Register a new user</span><br />
+	<input type="text" id="registerUsername" placeholder="Username" /><br />
+	<input type="password" id="registerPassword" placeholder="Password" /><br />
+	<input type="password" id="verifyPassword" placeholder="Verify Password" /><br />
+	<button type="button" id="registerButton" class="buttons" onclick="doRegister();"> Submit </button>
+	<button type="button" id="logoutButton" class="buttons" onclick="mainscreen();"> Go to Login </button>
+	<br />
+	<span id="registerResult"></span>
+
+	<script>
+		function mainscreen()
+		{
+			document.getElementById("registerDiv").style.display = "none";
+			doLogout();
+		}
+	</script>
+</div>
+
+<div id="accessUIDiv" style="display: none; visibility:hidden;">
+
+	<div class="imgcontainer">
+    			<img src="kiss.png" alt="kiss me thru the phone" class="kiss">
+  	</div>
+	<input type="text" id="searchText" placeholder="Search by name, number, or email"/>
+	<button type="button" id="searchContactButton" class="buttons" onclick="searchContact();"> Search! </button>
+	<button type="button" class="button" id="submit" onclick="showAdd();">Add Contact</button>
+	<br />
+	<span id="contactSearchResult"></span>
+	<br /><br />
+
+	<span id="getContacts"></span>
+	<table class="contacts" id="conTable" border="1">
+			<tr><th width=100>First Name</th>
+				<th width=100>Last Name</th>
+				<th width=100>Phone</th>
+				<th width=200>Email</th>
+				<th width=200>Options</th>
+				<th width=200></th></tr>
+	</table>
+	<br />
+	<span id="contactAddResult"></span>
+</div>
+</div>
+
+<div id="loggedInDiv" style="display:none; visibility:hidden;">
+	<span id="username"></span><br />
+	<button type="button" id="logoutButton" class="buttons" onclick="doLogout();"> Log Out </button>
+</div>
+</div>
+</div>
+</body>
+</html>
